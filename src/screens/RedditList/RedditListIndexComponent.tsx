@@ -23,7 +23,8 @@ export const WizListReddit = ({ data, children, navigation }: any)  => {
   const keyExtractor = (item:{}, index:number) => index.toString()
   const RenderSubTitle = (props:{children:React.ReactNode, styles?:{} }) => <ListItem.Subtitle style={{...wizStyles.wizTextTitle__text__small, flex:1, ...props.styles}}>{props.children}</ListItem.Subtitle>;
 
-  const renderItem = ( {item} : any) => {
+  const renderItem = ( {item, index} : any) => {
+    const ttalItems: number = children.length;
     const {
       title,
       score_f,
@@ -62,24 +63,29 @@ export const WizListReddit = ({ data, children, navigation }: any)  => {
     };
 
     return(
-      <ListItem
-        linearGradientProps={{
-          colors: ['#FFFFFF', '#E2E2E2'],
-          start: { x: 1, y: 0 },
-          end: { x: 0.2, y: 0 },
-        }}
-        Component={TouchableOpacity}
-        ViewComponent={LinearGradient}
-        containerStyle={{ margin:5, borderRadius:5, ...wizStyles.boxShadow }}
-        onPress ={goUrlSection}
-      >
-        <RenderItemAvatar />
-        <ListItem.Content>
-          <RenderItemDate />
-          <RenderItemTitle />
-          <RenderItemFooter />
-        </ListItem.Content>
-      </ListItem>
+      <>
+        <ListItem
+          linearGradientProps={{
+            colors: ['#FFFFFF', '#E2E2E2'],
+            start: { x: 1, y: 0 },
+            end: { x: 0.2, y: 0 },
+          }}
+          Component={TouchableOpacity}
+          ViewComponent={LinearGradient}
+          containerStyle={{ margin:5, borderRadius:5, ...wizStyles.boxShadow }}
+          onPress ={goUrlSection}
+        >
+          <RenderItemAvatar />
+          <ListItem.Content>
+            <RenderItemDate />
+            <RenderItemTitle />
+            <RenderItemFooter />
+          </ListItem.Content>
+        </ListItem>
+        {
+          (index === (ttalItems-1) ) &&<View  style={{height:90}}/>
+        }
+      </>
     );
   };
 

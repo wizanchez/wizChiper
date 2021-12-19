@@ -62,8 +62,8 @@ export default App;
 ## Algunos pantallazos
 
 Se muestra algunas pantallazos de la app
-|![images](https://wizanchez.com/static/chiper/img1.PNG)|![images](https://wizanchez.com/static/chiper/img2.PNG)
+|![images](https://wizanchez.com/static/chiper/img1.PNG)|![images](https://wizanchez.com/static/chiper/img22.PNG)
 | ------------- | ------------- |
-|![images](https://wizanchez.com/static/chiper/img3.PNG)|![images](https://wizanchez.com/static/chiper/img4.PNG)
+|![images](https://wizanchez.com/static/chiper/img33.PNG)|![images](https://wizanchez.com/static/chiper/img444.PNG)
 | ------------- | ------------- |
-|![images](https://wizanchez.com/static/chiper/img5.PNG)|![images](https://wizanchez.com/static/chiper/img6.jpeg)
+|![images](https://wizanchez.com/static/chiper/img555.PNG)|![images](https://wizanchez.com/static/chiper/img666.PNG)

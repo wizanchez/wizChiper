@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "wizChipper",
-    "slug": "wizChipper",
+    "name": "wizChiper",
+    "slug": "wizChiper",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/images/ico/icoLogo1024.png",
@@ -23,10 +23,10 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./src/assets/images/adaptive-icon.png",
+        "foregroundImage": "./src/assets/images/ico/icoLogo1024.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.lsanchez.wizChipper"
+      "package": "com.wizanchez"
     },
     "web": {
       "favicon": "./src/assets/images/favicon.png"

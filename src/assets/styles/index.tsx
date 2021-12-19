@@ -77,7 +77,7 @@ const wizStyles = StyleSheet.create({
     width: '100%',
   },
   boxShadow: {
-    shadowColor: 'white',
+    shadowColor: '#cdcdcd',
     shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.5,
     shadowRadius: 5,
