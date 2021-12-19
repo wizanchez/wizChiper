@@ -1,11 +1,14 @@
 # wizChiper
 **Nombre:** Luis Sanchez
+
 **Email:** wizanchez@gmail.com
 
-Se explicara de la estructura del aplicativo:
+----
+Se explicará de la estructura del aplicativo:
 
 
 Se crea el proyecto con el siguiente orden:
+
 ![](https://wizanchez.com/static/chiper/cap1.png)
 * **src/ :** Aca se contiene todo el proyecto, la funcionalidad
 * **src/assets/ :** Todo el material publico que se interactua con la app
