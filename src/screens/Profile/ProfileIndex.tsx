@@ -38,7 +38,7 @@ const ProfileIndexInfo = () => (
     <WizTextTitle type={5} center={true} color='#34324a' subtitle={'Nombre'} >{'Luis Fernando Sánchez García'}</WizTextTitle>
     <WizTextTitle type={5} center={true} color='#34324a' subtitle={'Teléfono'} >{'(+57) 314 293 01 79'}</WizTextTitle>
     <WizTextTitle type={5} center={true} color='#34324a' subtitle={'Ciudad Domicílio'} >{'Bogotá D.C'}</WizTextTitle>
-    <WizTextTitle type={5} center={true} color='#34324a' subtitle={'Edad'} >{'40 años'}</WizTextTitle>
+    <WizTextTitle type={5} center={true} color='#34324a' subtitle={'Email'} >{'wizanchez@gmail.com'}</WizTextTitle>
   </>
 )
 

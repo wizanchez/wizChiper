@@ -3,11 +3,9 @@
 /** @module vendor/wizFrameWorkComponent/wizTemplate */
 import React, { useEffect } from 'react';
 import {
-  Text,
   View,
   Platform,
   ScrollView,
-  TouchableOpacity,
   KeyboardAvoidingView,
 } from 'react-native';
 import { ReactProps } from '../types';

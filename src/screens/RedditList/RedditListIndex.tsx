@@ -39,16 +39,12 @@ function SettingsScreen() {
 const Tab = createMaterialTopTabNavigator();
 const RedditListIndex = ({ navigation }: RootTabScreenProps<'TabOne'>) => {
   const infoRedditListing = useRedditList();
-  const [index, setIndex] = useState(0);
   const { isLoaded, childrenMain, childrenCreate, childrenHot, childrenPopular } = infoRedditListing;
   const { setOptions } = navigation;
   useLayoutEffect(() => {
     renderHeader(setOptions);
   }, [navigation]);
 
-  const handleIndex = (item:number) => {
-    setIndex(item);
-  };
 
   if (!isLoaded ) {
     return <WizindicatorUIActivity/>;
@@ -61,18 +57,6 @@ const RedditListIndex = ({ navigation }: RootTabScreenProps<'TabOne'>) => {
       <Tab.Screen name="Hot" children={()=><WizListReddit data={infoRedditListing} children={childrenPopular} navigation={navigation}/>} />
       <Tab.Screen name="Popular" children={()=><WizListReddit data={infoRedditListing} children={childrenHot} navigation={navigation}/>} />
     </Tab.Navigator>
-  );
-
-  return (
-    <WizTemplateHome
-      preload={{}}
-      withScrollView={false}
-    >
-      {
-        !isLoaded ? (<WizindicatorUIActivity/>)
-        :(<WizListReddit data={infoRedditListing} navigation={navigation} />)
-      }
-    </WizTemplateHome>
   );
 }
 
