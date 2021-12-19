@@ -22,7 +22,8 @@ Se crea el proyecto con el siguiente orden:
 
 ## Creando una pantalla
 Como se decia antes las funcionalidades de las pantallas estan en la ruta ```./src/screens/__NOMBRE_MODULO__```
-Analizaremos el modulo de ```redditList```
+Analizaremos el modulo de ```redditList```.
+
 ![](https://wizanchez.com/static/chiper/cap2.png)
 * **src/screens/RedditList/RedditStack.tsx :** Todo los nombres que terminen con la palabra ```....Stack``` controla las rutas dentro de su propio modulo,
 ![images](https://wizanchez.com/static/chiper/cap3.png)
